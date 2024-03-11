@@ -11,10 +11,10 @@ const Home = () => {
   return (
     <div>
       <SlickComp/>
-      <Sorting/>
+      <Sorting setSort={setSort}/>
       <div className='flex'>
-        <Category/>
-        <Products/>
+        <Category setCategory={setCategory}/>
+        <Products category={category} sort={sort} />
       </div>
     </div>
   )
